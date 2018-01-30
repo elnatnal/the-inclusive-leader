@@ -1,54 +1,28 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+###########
+# site.title
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: The Inclusive Leader
-email: jonathanmstephens@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  A project to define, explain, and explore how to practice inclusive leadership. We should lead through trust, respect, vulnerability, generosity, and openness if we want to make the best environment for working together, towards a similar goal, project, or ideal.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: theinclusiveldr
-github_username:  elnatnal
-# MEDIUM_USER_ID: elnatnal
-# MEDIUM_INTEGRATION_TOKEN: 2c6de30b41316f1ca06d69b5e1578a23483f04b0d7f5ccf769763952b345fb638
+title:    'Jekyll Starter Theme V2'
+subtitle: 'Another Static Site Quick Starter Theme'
 
-# Build settings
+
+nav:
+- { title: 'Welcome',              href: '/' }
+- { title: 'Page Two',             href: '/two.html' }
+- { title: 'Page Three',           href: '/three.html' }
+- { title: 'Questions? Comments?', href: 'http://groups.google.com/group/wwwmake' }
+- { title: 'About',                href: 'https://github.com/henrythemes/jekyll-starter-theme-v2' }
+
+
+#########################
+# more settings
+
 markdown: kramdown
-plugins:
-  - jekyll-feed
 
 sass:
   sass_dir: css
-  style: compressed
+  style:    expanded
 
-# jekyll-crosspost_to_medium:
-#   enabled: false
-#   cache: .jekyll-crosspost_to_medium
-#  status: public
-#  license: all-rights-reserved
-#  text: '<p><i>This post was originally published at theinclusiveleader.com</i></p>',
-#  backdate: true
+exclude:
+- README.md
+- LICENSE.md
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
