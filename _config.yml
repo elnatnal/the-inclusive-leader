@@ -6,17 +6,21 @@ subtitle: 'Another Static Site Quick Starter Theme'
 
 
 nav:
-- { title: 'Welcome',              href: '/' }
-- { title: 'Page Two',             href: '/two.html' }
-- { title: 'Page Three',           href: '/three.html' }
-- { title: 'Questions? Comments?', href: 'http://groups.google.com/group/wwwmake' }
-- { title: 'About',                href: 'https://github.com/henrythemes/jekyll-starter-theme-v2' }
-
+- { title: 'Home',              href: '/' }
+- { title: 'About',             href: '/about.html' }
+- { title: 'Articles',           href: '/articles.html' }
+- { title: 'Newsletters', href: '/newsletters.html' }
+- { title: 'Newsletter',                href: 'http://tinyletter.com/theinclusiveleader' }
+- { title: 'Medium',                href: 'https://medium.com/@elnatnal' }
+- { title: 'RSS',                href: '/feed.xml' }
 
 #########################
 # more settings
 
 markdown: kramdown
+
+plugins:
+  - jekyll-feed
 
 sass:
   sass_dir: css
