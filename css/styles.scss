@@ -1,0 +1,19 @@
+---
+# Stylings for The Inclusive Leader. Handcrafted by Jonathan Stephens 
+--- 
+
+// Imports
+@import "normalize.scss";
+@import "type.scss";
+
+// Layout 
+@import "layout/_grid.scss";
+@import "layout/_header.scss";
+@import "layout_footer.scss";
+
+// Pages
+@import "pages/_index.scss";
+@import "pages/_about.scss";
+@import "pages/_articles.scss";
+@import "pages/_posts.scss";
+
