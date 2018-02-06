@@ -1,0 +1,9 @@
+<link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700|Fira+Sans:400,400i,700,700i|Playfair+Display:400,400i,900" rel="stylesheet">
+
+<link rel="stylesheet" href="{{ "/assets/vendor/normalize-css/normalize.css" | prepend: site.baseurl }}">
+<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+# {% if site.styles contains site.highlightstyle %}
+#  <link rel="stylesheet" href="{{ site.baseurl }}/assets/vendor/highlight/styles/{{ site.highlightstyle }}.css">
+# {% else %}
+#  <link rel="stylesheet" href="{{ site.baseurl }}/assets/vendor/highlight/styles/solarized_dark.css">
+# {% endif %}

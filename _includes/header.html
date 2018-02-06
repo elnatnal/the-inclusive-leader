@@ -1,17 +1,32 @@
+<header class="header">
+    <div class="navigation">
+        <a href="/" class="logo">{{ site.title }}</a>
 
-<div id="header">
-  <span class='big'>{{ site.title }}</span>
-  <span class='small'>{{ site.subtitle }}</span>
-</div>
+        <ul class="nav-menu">
+            <li class="menu__entry"><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
+            <li class="menu__entry"><a href="{{ '/articles' | prepend: site.baseurl }}">Articles</a></li>
+            <li class="menu__entry"><a href="{{ '/newsletters' | prepend: site.baseurl }}">Newsletters</a></li>
+        </ul>
 
+        <ul class="subscribe-menu">
+            <li class="menu__entry"><strong>Subscribe</strong></li>
+            <li class="menu__entry"><a href="https://tinyletter.com/theinclusiveleader">Newsletter</a></li>
+            <li class="menu__entry"><a href="https://medium.com/@elnatnal">Medium</a></li>
+            <li class="menu__entry"><a href="{{ '/feed.xml' | prepend: site.baseurl }}">RSS</a></li>
+        </ul>
+    </div>
 
-<div id="nav">
-{% for item in site.nav %}
-  {% if item.href contains 'http' %}
-     <a href="{{ item.href }}">{{ item.title }}</a>
-  {% else %}
-     <a href="{{ item.href | relative_url }}">{{ item.title }}</a>
-  {% endif %}
-  {% if forloop.last %}  {% else %} • {% endif %}
-{% endfor %}
-</div>
+    <ul class="social-links">
+        {% if site.author.github %}
+            <a href="https://github.com/{{ site.author.github }}" class="social-links__entry" target="_blank">
+                <i class="fa fa-github"></i>
+            </a>
+        {% endif %}
+
+        {% if site.author.twitter %}
+            <a href="https://twitter.com/{{ site.author.twitter }}" class="social-links__entry" target="_blank">
+                <i class="fa fa-twitter"></i>
+            </a>
+        {% endif %}
+    </ul>
+</header>
