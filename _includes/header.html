@@ -1,4 +1,8 @@
 <header class="header">
+
+{% if page.url == "/" %}	 
+<!-- ADDED THIS TO DEVELOP THE WEBSITE AND HAVE SOMETHING AVAiLABLE WHILE IT's BEIng DEVELOPED --!>
+{% else %}
     <div class="navigation">
         <a href="/" class="logo">{{ site.title }}</a>
 
@@ -29,4 +33,5 @@
             </a>
         {% endif %}
     </ul>
+{% endif %}
 </header>
